@@ -11,15 +11,8 @@
     background: #fff;
     color: #0d0c22;
 }
-/* responsive */
-@media screen and (max-width: 1024px){
-   .corps{
-    flex-direction: column;
-   }
-}
 
 #wrap{
-    display: grid;
     width: 100%;
     height: 50px;
     margin: 10px;
@@ -29,8 +22,10 @@
     display: flex;
     flex-direction: column;
 }
+.navbar{
+    display: flex;
+}
 .nav{
-   
     height: 50px;
     padding: 0;
     margin: 0;
@@ -91,13 +86,16 @@
     border: none;
     height: 40px;
     text-align: center;
+    padding-right: 10%;
     background-color: #fff;
     width: 400px;
     font-weight: bold;
     font-size: 16px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+.p2{
+    display: block;
+}
 input{
     border: 1px solid rgb(238, 190, 238);
     height: 30px;
@@ -105,7 +103,6 @@ input{
     border-radius: 20px;
     padding-left: 30px;
 }
-
 .btnlog{
     height: auto;
     text-align: center;
@@ -317,7 +314,7 @@ h4{
     width: 40px;
     margin-left: 5px;
     border-radius: 8px;
-    background-color: #939596;
+    background-color: #fdfeff;
 }
 .namesimgs .btnpro a{
     text-decoration: none;
@@ -358,23 +355,23 @@ h4{
     text-align: left;
 }
 .ims .survole{
-    background-color:whitesmoke;
+    /* background-color:whitesmoke; */
     position: absolute;
     top: 0;
     left: 0;
-    color: rgb(15, 15, 15);
+    color: rgb(0, 0, 0);
     -webkit-transition: all 300ms ease-out;
     -moz-transition: all 300ms ease-out;
     -o-transition: all 300ms ease-out;
     -ms-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
     opacity: 0;
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     padding: 180px 5px;
 }
 .ims:hover .survole{
-    opacity: 0.5;
+    opacity: 1.5;
 }
 .ims .text{
     -webkit-transition: all 300ms ease-out;
@@ -404,7 +401,6 @@ h4{
 /* fin effet de survol */
 /* effet de survol sur les icones de l'image */
 .ims .icones{
-    background-color: rgb(255, 255, 255);
     position: absolute;
     top: 0;
     left: 0;
@@ -415,14 +411,14 @@ h4{
     -ms-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
     opacity: 0;
-    width: 400px;
-    height: 200px;
+    width: 100px;
+    height: 50px;
     padding: 180px 5px;
     padding-left: 230px;
     margin-top: 20px;
 }
 .ims:hover .icones{
-    opacity: 0.5;
+    opacity: 1.5;
 }
 .ims .namesicones{
     -webkit-transition: all 300ms ease-out;
@@ -445,7 +441,6 @@ h4{
     opacity: 1;
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
-
 }
 .fa{
     padding: 5px;
@@ -562,6 +557,7 @@ h4{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
+
 /* css grille 2 défilement*/
 .imagesdefile{
     display: grid;
@@ -602,6 +598,7 @@ h4{
         transform: translateX(calc(-250px * 9));
     }
 }
+
 /* fin css grille 2 défilement*/
 
 /* début footer */
@@ -737,10 +734,50 @@ small{
     font-family: Arial, Helvetica, sans-serif;
 }
 /* fin footer */
-/* responsive */
-
-@media(max-width:390px){
+@media(max-width: 800px){
     .corps{
         flex-direction: column;
     }
+    .foot{
+        width: 50%;
+    }
+    .social-links{
+        width: 50%;
+    }
+    .container1{
+        width: 50%;
+    } 
+    .job{
+        width: 50%;
+    } 
+    .gril2_images{
+        flex-direction: column;
+        width: 50%;
+    }
+    .designer{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .inspiration{
+        flex-direction: column;
+        width: auto;
+    }
+    .gril_images{
+        flex-direction: column;
+        width: 50%;
+    }
+    .p2{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .navbar{
+        flex-direction: column;
+        height: auto;
+    }
+    .nav{
+        height: 50px;
+    }
+    
 }
